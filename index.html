@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@300&family=Outfit:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator App</title>   
+</head>
+<body>
+    <main>
+        <section class="dateSection">
+            <form action="#" class="dateAndButton">
+                <div class="dates">
+                    <div class="oneOf">
+                        <label for="Date">DAY</label>
+                        <input type="text" id="day" placeholder="DD"/>
+                        <p id="errors">This field is required</p>
+                        <p id="valid">Must be a valid day</p>
+                        <div id="dateValid">Must be a valid date</div>
+                    </div>
+                    <div class="oneOf">
+                        <label for="Month">MONTH</label>
+                        <input type="text" id="month" placeholder="MM"/>
+                        <p id="errorsMonth">This field is required</p>
+                        <p id="validMonth">Must be a valid month</p>
+                    </div>
+                    <div class="oneOf">
+                        <label for="Year">YEAR</label>
+                        <input type="text" id="year" placeholder="YYYY"/>
+                        <p id="errorsYear">This field is required</p>
+                        <p id="validYear">Must be in the past</p>
+                    </div>
+                </div>
+                <div class="buttonSubmit">
+                    <button class="arrowButton"><img src="icon-arrow.svg" alt="Arrow Icon"></button>
+                </div>
+            </form>
+        </section>
+        <section class="showAge">
+            <div class="show">
+                <p><span id="years">- -</span> years</p>
+            </div>
+            <div class="show">
+                <p><span id="months">- -</span> months</p>
+            </div>
+            <div class="show">
+                <p><span id="days">- -</span> days</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
