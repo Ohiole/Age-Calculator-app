@@ -91,6 +91,16 @@ function calcAge(birthday){
 
 button.addEventListener('click', function(e) {
     e.preventDefault();
+    
+    if(e){
+        reqError.style.display = 'none';
+        reqMonth.style.display = 'none';
+        reqYear.style.display = 'none';
+        dayError.style.display = 'none';
+        validDate.style.display = 'none';
+        inputDay.style.border = '1px solid hsl(0, 0%, 86%)'
+    };
+
 
     let day = checkDay();
     let month = checkMonth();
